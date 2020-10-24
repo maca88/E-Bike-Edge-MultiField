@@ -1,0 +1,16 @@
+<strings>
+    <string id="Battery">LEV Battery</string>
+    <string id="BatteryChargingCycles">Charge Cyc.</string>
+    <string id="BatteryVoltage">Battery V.</string>
+    <string id="Lights">LEV Lights</string>
+    <string id="Odometer">Odometer</string>
+    <string id="RemainingRange">Rem. Range</string>
+    <string id="FuelConsumption">Consum.</string>
+    <string id="TemperatureMotor">Motor T.</string>
+    <string id="TemperatureBattery">Battery T.</string>
+    <string id="AssistMode">Assist Mode</string>
+    <string id="Speed">LEV Speed</string>
+    <string id="ErrorCode">LEV Error</string>
+    <string id="CurrentChargeDistance">Charge Dist.</string>
+    <string id="Assist">Assist</string>
+</strings>

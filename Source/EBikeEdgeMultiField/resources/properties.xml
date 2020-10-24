@@ -1,0 +1,24 @@
+<resources>
+    <properties>
+        <property id="FT0" type="number">0</property>
+        <property id="FT1" type="number">5</property>
+        <property id="FT2" type="number">9</property>
+        <property id="FT3" type="number">4</property>
+        <property id="FT4" type="number">10</property>
+        <property id="FT5" type="number">1</property>
+        <property id="FT6" type="number">6</property>
+        <property id="FT7" type="number">7</property>
+        <property id="FT8" type="number">11</property>
+        <property id="FT9" type="number">12</property>
+        <property id="FL0" type="number">1017</property>
+        <property id="FL1" type="number">202</property>
+        <property id="FL2" type="number">100</property>
+        <property id="FF0" type="boolean">true</property>
+        <property id="FF1" type="boolean">true</property>
+        <property id="DN0" type="number">0</property>
+        <property id="DN1" type="number">0</property>
+        <property id="DN2" type="number">0</property>
+        <property id="SC" type="number">43775</property>
+        <property id="CT" type="number">0</property>
+    </properties>
+</resources>

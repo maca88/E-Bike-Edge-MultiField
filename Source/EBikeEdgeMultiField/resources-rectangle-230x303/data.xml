@@ -1,0 +1,17 @@
+<resources>
+    <!-- Simulator -->
+    <jsonData id="FontTopPaddings">[1304966681671598725]</jsonData>
+    <jsonData id="DefaultValues">["--", "---", "---"]</jsonData>
+
+    <!-- Format [[:colorScreen:, :labelAlignement:, :valueFontHeightOffset:, :valueHorizontalAlignement:, :displayUnits:, :padding:, :topPadding:, :labelFont:]
+        :colorScreen: = true / false
+        :labelAlignement: = 1 (Center) / 2 (Left)
+        :valueFontHeightOffset: = Number
+        :valueHorizontalAlignement: = 1 (Center) / 0 (Right)
+        :displayUnits: = true / false
+        :padding: = Number
+        :topPadding: = Number
+        :labelFont: = 0-8
+    -->
+    <jsonData id="Settings">[false, 2, 41, 0, false, 2, 3, 1]</jsonData>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <!-- Simulator
+    <jsonData id="FontTopPaddings">[290495474803212675]</jsonData> -->
+    <!-- Device -->
+    <jsonData id="FontTopPaddings">[217303114426875904]</jsonData>
+</resources>

@@ -1,0 +1,6 @@
+project.manifest = manifest.xml
+# excludeBase=device
+excludeBase=simulator
+
+# maps default
+base.excludeAnnotations = $(excludeBase)

@@ -1,0 +1,104 @@
+<strings>
+    <string id="AppName">E-Bike MultiField</string>
+
+    <string id="FieldsLayout1Type">Primary Fields Layout</string>
+    <string id="FieldsLayout2Type">Secondary Fields Layout</string>
+    <string id="FieldsLayout3Type">Tertiary Fields Layout</string>
+
+    <string id="Field1Type">Field 1 Type</string>
+    <string id="Field2Type">Field 2 Type</string>
+    <string id="Field3Type">Field 3 Type</string>
+    <string id="Field4Type">Field 4 Type</string>
+    <string id="Field5Type">Field 5 Type</string>
+    <string id="Field6Type">Field 6 Type</string>
+    <string id="Field7Type">Field 7 Type</string>
+    <string id="Field8Type">Field 8 Type</string>
+    <string id="Field9Type">Field 9 Type</string>
+    <string id="Field10Type">Field 10 Type</string>
+
+    <string id="SeparatorsColor">Data field separator color</string>
+
+    <string id="ANTChannelType">ANT channel type</string>
+    <string id="BidirectionalReceive">Bidirectional Receive (Slave)</string>
+    <string id="ReceiveOnly">Receive Only (Slave)</string>
+
+    <string id="FieldOne">1 Field</string>
+    <string id="FieldTwoA">2 Fields A</string>
+    <string id="FieldTwoB">2 Fields B</string>
+    <string id="FieldThreeA">3 Fields A (Portrait only)</string>
+    <string id="FieldThreeB">3 Fields B</string>
+    <string id="FieldFourA">4 Fields A (Portrait only)</string>
+    <string id="FieldFourB">4 Fields B</string>
+    <string id="FieldFiveA">5 Fields A (Portrait only)</string>
+    <string id="FieldFiveB">5 Fields B (Landscape only)</string>
+    <string id="FieldSixA">6 Fields A (Portrait only)</string>
+    <string id="FieldSixB">6 Fields B (Landscape only)</string>
+    <string id="FieldSevenA">7 Fields A (Portrait only)</string>
+    <string id="FieldSevenB">7 Fields B (Landscape only)</string>
+    <string id="FieldEightA">8 Fields A (Portrait only)</string>
+    <string id="FieldEightB">8 Fields B (Landscape only)</string>
+    <string id="FieldNineA">9 Fields A (Portrait only)</string>
+    <string id="FieldNineB">9 Fields B (Landscape only)</string>
+    <string id="FieldTen">10 Fields (Portrait only)</string>
+
+    <string id="RecordBattery">Record LEV battery</string>
+    <string id="RecordAssistMode">Record LEV assist mode</string>
+
+    <string id="DeviceNumber1">Primary LEV Device Number</string>
+    <string id="DeviceNumber2">Secondary LEV Device Number</string>
+    <string id="DeviceNumber3">Tertiary LEV Device Number</string>
+
+    <string id="BatteryField">Battery level</string>
+    <string id="BatteryChargingCyclesField">Charging Cycle Count</string>
+    <string id="BatteryVoltageField">Battery Voltage</string>
+    <string id="LightsField">LEV Lights</string>
+    <string id="OdometerField">LEV Odometer</string>
+    <string id="RemainingRangeField">Remaining Range</string>
+    <string id="FuelConsumptionField">Fuel Consumption</string>
+    <string id="TemperatureMotorField">Motor Temperature</string>
+    <string id="TemperatureBatteryField">Battery Temperature</string>
+    <string id="AssistModeField">Assist Mode</string>
+    <string id="SpeedField">LEV Speed</string>
+    <string id="ErrorCodeField">LEV Error Code</string>
+    <string id="CurrentChargeDistanceField">Distance on Current Charge</string>
+    <string id="AssistField">% Assist</string>
+
+    <string id="ColdTemperature">Cold</string>
+    <string id="ColdWarmTemperature">Warm-</string>
+    <string id="WarmTemperature">Warm</string>
+    <string id="WarmHotTemperature">Warm+</string>
+    <string id="HotTemperature">Hot</string>
+
+    <string id="On">ON</string>
+    <string id="Off">OFF</string>
+
+    <string id="Procent">%</string>
+    <string id="Mode">Mode</string>
+
+    <string id="Red">Red</string>
+    <string id="DarkRed">Dark Red</string>
+    <string id="Orange">Orange</string>
+    <string id="Yellow">Yellow</string>
+    <string id="Green">Green</string>
+    <string id="DarkGreen">Dark Green</string>
+    <string id="Blue">Blue</string>
+    <string id="DarkBlue">Dark Blue</string>
+    <string id="Purple">Purple</string>
+    <string id="Pink">Pink</string>
+
+    <!-- Field titles -->
+    <string id="Battery">LEV Battery</string>
+    <string id="BatteryChargingCycles">Charge Cycles</string>
+    <string id="BatteryVoltage">Battery Volt.</string>
+    <string id="Lights">LEV Lights</string>
+    <string id="Odometer">LEV Odometer</string>
+    <string id="RemainingRange">Rem. Range</string>
+    <string id="FuelConsumption">Consumption</string>
+    <string id="TemperatureMotor">Motor Temp.</string>
+    <string id="TemperatureBattery">Battery Temp.</string>
+    <string id="AssistMode">Assist Mode</string>
+    <string id="Speed">LEV Speed</string>
+    <string id="ErrorCode">LEV Error Code</string>
+    <string id="CurrentChargeDistance">Charge Dist.</string>
+    <string id="Assist">Assist</string>
+</strings>

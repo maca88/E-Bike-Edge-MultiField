@@ -1,0 +1,5 @@
+<resources>
+    <jsonData id="SimulatorFontPaddings">{}</jsonData>
+    <jsonData id="DeviceFontPaddings">{}</jsonData>
+    <jsonData id="Settings">[false]</jsonData>
+</resources>

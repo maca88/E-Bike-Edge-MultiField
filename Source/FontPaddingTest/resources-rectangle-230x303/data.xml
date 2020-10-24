@@ -1,0 +1,4 @@
+<resources>
+    <jsonData id="SimulatorFontPaddings">{ "EN": [5, 5, 6, 6, 7, 9, 11, 14, 18] }</jsonData>
+    <jsonData id="Settings">[true]</jsonData>
+</resources>

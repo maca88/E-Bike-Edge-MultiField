@@ -1,0 +1,20 @@
+<resources>
+    <fitContributions>
+        <fitField id="0"
+                  displayInChart="true"
+                  sortOrder="0"
+                  precision="0"
+                  chartTitle="@Strings.BatteryField"
+                  dataLabel="@Strings.BatteryField"
+                  unitLabel="@Strings.Procent"
+                  fillColor="#00FF00" />
+        <fitField id="1"
+                  displayInChart="true"
+                  sortOrder="1"
+                  precision="0"
+                  chartTitle="@Strings.AssistModeField"
+                  dataLabel="@Strings.AssistModeField"
+                  unitLabel="@Strings.Mode"
+                  fillColor="#FFFF00" />
+    </fitContributions>
+</resources>

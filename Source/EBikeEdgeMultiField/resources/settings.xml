@@ -1,0 +1,285 @@
+<resources>
+    <settings>
+        <setting propertyKey="@Properties.FL0" title="@Strings.FieldsLayout1Type">
+            <settingConfig type="list">
+                <listEntry value="100">@Strings.FieldOne</listEntry>
+                <listEntry value="201">@Strings.FieldTwoA</listEntry>
+                <listEntry value="202">@Strings.FieldTwoB</listEntry>
+                <listEntry value="303">@Strings.FieldThreeA</listEntry>
+                <listEntry value="304">@Strings.FieldThreeB</listEntry>
+                <listEntry value="405">@Strings.FieldFourA</listEntry>
+                <listEntry value="406">@Strings.FieldFourB</listEntry>
+                <listEntry value="507">@Strings.FieldFiveA</listEntry>
+                <listEntry value="508">@Strings.FieldFiveB</listEntry>
+                <listEntry value="609">@Strings.FieldSixA</listEntry>
+                <listEntry value="610">@Strings.FieldSixB</listEntry>
+                <listEntry value="711">@Strings.FieldSevenA</listEntry>
+                <listEntry value="712">@Strings.FieldSevenB</listEntry>
+                <listEntry value="813">@Strings.FieldEightA</listEntry>
+                <listEntry value="814">@Strings.FieldEightB</listEntry>
+                <listEntry value="915">@Strings.FieldNineA</listEntry>
+                <listEntry value="916">@Strings.FieldNineB</listEntry>
+                <listEntry value="1017">@Strings.FieldTen</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FL1" title="@Strings.FieldsLayout2Type">
+            <settingConfig type="list">
+                <listEntry value="100">@Strings.FieldOne</listEntry>
+                <listEntry value="201">@Strings.FieldTwoA</listEntry>
+                <listEntry value="202">@Strings.FieldTwoB</listEntry>
+                <listEntry value="303">@Strings.FieldThreeA</listEntry>
+                <listEntry value="304">@Strings.FieldThreeB</listEntry>
+                <listEntry value="405">@Strings.FieldFourA</listEntry>
+                <listEntry value="406">@Strings.FieldFourB</listEntry>
+                <listEntry value="507">@Strings.FieldFiveA</listEntry>
+                <listEntry value="508">@Strings.FieldFiveB</listEntry>
+                <listEntry value="609">@Strings.FieldSixA</listEntry>
+                <listEntry value="610">@Strings.FieldSixB</listEntry>
+                <listEntry value="711">@Strings.FieldSevenA</listEntry>
+                <listEntry value="712">@Strings.FieldSevenB</listEntry>
+                <listEntry value="813">@Strings.FieldEightA</listEntry>
+                <listEntry value="814">@Strings.FieldEightB</listEntry>
+                <listEntry value="915">@Strings.FieldNineA</listEntry>
+                <listEntry value="916">@Strings.FieldNineB</listEntry>
+                <listEntry value="1017">@Strings.FieldTen</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FL2" title="@Strings.FieldsLayout3Type">
+            <settingConfig type="list">
+                <listEntry value="100">@Strings.FieldOne</listEntry>
+                <listEntry value="201">@Strings.FieldTwoA</listEntry>
+                <listEntry value="202">@Strings.FieldTwoB</listEntry>
+                <listEntry value="303">@Strings.FieldThreeA</listEntry>
+                <listEntry value="304">@Strings.FieldThreeB</listEntry>
+                <listEntry value="405">@Strings.FieldFourA</listEntry>
+                <listEntry value="406">@Strings.FieldFourB</listEntry>
+                <listEntry value="507">@Strings.FieldFiveA</listEntry>
+                <listEntry value="508">@Strings.FieldFiveB</listEntry>
+                <listEntry value="609">@Strings.FieldSixA</listEntry>
+                <listEntry value="610">@Strings.FieldSixB</listEntry>
+                <listEntry value="711">@Strings.FieldSevenA</listEntry>
+                <listEntry value="712">@Strings.FieldSevenB</listEntry>
+                <listEntry value="813">@Strings.FieldEightA</listEntry>
+                <listEntry value="814">@Strings.FieldEightB</listEntry>
+                <listEntry value="915">@Strings.FieldNineA</listEntry>
+                <listEntry value="916">@Strings.FieldNineB</listEntry>
+                <listEntry value="1017">@Strings.FieldTen</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.SC" title="@Strings.SeparatorsColor">
+            <settingConfig type="list">
+                <listEntry value="16711680">@Strings.Red</listEntry>
+                <listEntry value="11141120">@Strings.DarkRed</listEntry>
+                <listEntry value="16733440">@Strings.Orange</listEntry>
+                <listEntry value="16755200">@Strings.Yellow</listEntry>
+                <listEntry value="65280">@Strings.Green</listEntry>
+                <listEntry value="43520">@Strings.DarkGreen</listEntry>
+                <listEntry value="43775">@Strings.Blue</listEntry>
+                <listEntry value="255">@Strings.DarkBlue</listEntry>
+                <listEntry value="11141375">@Strings.Purple</listEntry>
+                <listEntry value="16711935">@Strings.Pink</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.CT" title="@Strings.ANTChannelType">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BidirectionalReceive</listEntry>
+                <listEntry value="64">@Strings.ReceiveOnly</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT0" title="@Strings.Field1Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT1" title="@Strings.Field2Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT2" title="@Strings.Field3Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT3" title="@Strings.Field4Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT4" title="@Strings.Field5Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT5" title="@Strings.Field6Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT6" title="@Strings.Field7Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT7" title="@Strings.Field8Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT8" title="@Strings.Field9Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FT9" title="@Strings.Field10Type">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.BatteryField</listEntry>
+                <listEntry value="1">@Strings.BatteryChargingCyclesField</listEntry>
+                <listEntry value="2">@Strings.BatteryVoltageField</listEntry>
+                <listEntry value="3">@Strings.LightsField</listEntry>
+                <listEntry value="4">@Strings.OdometerField</listEntry>
+                <listEntry value="5">@Strings.RemainingRangeField</listEntry>
+                <listEntry value="6">@Strings.FuelConsumptionField</listEntry>
+                <listEntry value="7">@Strings.TemperatureMotorField</listEntry>
+                <listEntry value="8">@Strings.TemperatureBatteryField</listEntry>
+                <listEntry value="9">@Strings.AssistModeField</listEntry>
+                <listEntry value="10">@Strings.SpeedField</listEntry>
+                <listEntry value="11">@Strings.ErrorCodeField</listEntry>
+                <listEntry value="12">@Strings.CurrentChargeDistanceField</listEntry>
+                <listEntry value="13">@Strings.AssistField</listEntry>
+            </settingConfig>
+        </setting>
+        <setting propertyKey="@Properties.FF0" title="@Strings.RecordBattery">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.FF1" title="@Strings.RecordAssistMode">
+            <settingConfig type="boolean" />
+        </setting>
+        <setting propertyKey="@Properties.DN0" title="@Strings.DeviceNumber1">
+            <settingConfig type="numeric" />
+        </setting>
+        <setting propertyKey="@Properties.DN1" title="@Strings.DeviceNumber2">
+            <settingConfig type="numeric" />
+        </setting>
+        <setting propertyKey="@Properties.DN2" title="@Strings.DeviceNumber3">
+            <settingConfig type="numeric" />
+        </setting>
+    </settings>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <jsonData id="SimulatorFontPaddings">{ "EN": [3, 3, 4, 4, 6, 3, 3, 4, 4], "CH": [2, 3, 2, 3, 5, 3, 3, 4, 4], "JA": [2, 3, 2, 3, 5, 3, 3, 4, 4], "KO": [1, 2, 2, 2, 4, 3, 3, 4, 4], "TH": [2, 2, 2, 3, 4, 0, 1, 1, 1] }</jsonData>
+    <jsonData id="DeviceFontPaddings">{ "EN": [0, 0, 0, 0, 0, 1, 1, 2, 3] }</jsonData>
+</resources>
