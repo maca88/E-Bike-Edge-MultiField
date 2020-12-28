@@ -24,14 +24,7 @@ class EBikeSensor extends Ant.GenericChannel {
         }
 
         // Set the configuration
-        var deviceConfig = new Ant.DeviceConfig({
-            :deviceType => 20,        // LEV Device
-            :messagePeriod => 8192,   // Channel period
-            :transmissionType => 0,   // Transmission type
-            :radioFrequency => 57     // Ant+ Frequency
-        });
-
-        setNextDeviceNumber(deviceConfig);
+        setNextDeviceNumber();
         searching = true;
     }
 
@@ -121,7 +114,7 @@ class EBikeSensor extends Ant.GenericChannel {
             if (0x01 /* MSG_ID_RF_EVENT */ == (payload[0] & 0xFF)) {
                 if (0x07 /* MSG_CODE_EVENT_CHANNEL_CLOSED */ == (payload[1] & 0xFF)) {
                     // Channel closed, re-open
-                    setNextDeviceNumber(GenericChannel.getDeviceConfig());
+                    setNextDeviceNumber();
                     open();
                 } else if (0x08 /* MSG_CODE_EVENT_RX_FAIL_GO_TO_SEARCH */ == (payload[1] & 0xFF)) {
                     searching = true;
@@ -132,11 +125,16 @@ class EBikeSensor extends Ant.GenericChannel {
         }
     }
 
-    private function setNextDeviceNumber(deviceConfig) {
+    private function setNextDeviceNumber() {
         _deviceIndex = (_deviceIndex + 1) % _deviceNumbers.size();
         var deviceNumber = _deviceNumbers[_deviceIndex];
-        deviceConfig.deviceNumber = deviceNumber;
-        GenericChannel.setDeviceConfig(deviceConfig);
+        GenericChannel.setDeviceConfig(new Ant.DeviceConfig({
+            :deviceNumber => deviceNumber,
+            :deviceType => 20,        // LEV Device
+            :messagePeriod => 8192,   // Channel period
+            :transmissionType => 0,   // Transmission type
+            :radioFrequency => 57     // Ant+ Frequency
+        }));
     }
 
     private function setNewDeviceNumber() {
