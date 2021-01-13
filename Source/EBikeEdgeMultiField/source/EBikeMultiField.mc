@@ -430,7 +430,7 @@ class EBikeMultiField extends WatchUi.DataField {
 
     private function updateAssistModes(newManufacturerId) {
         _assistModes = newManufacturerId == 108 /* Giant */ ? loadJson(:GiantAssistModes)
-                : newManufacturerId == 108 /* Specialized */ ? loadJson(:SpecializedAssistModes)
+                : newManufacturerId == 63 /* Specialized */ ? loadJson(:SpecializedAssistModes)
                 : null;
 
         return _assistModes;
