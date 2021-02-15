@@ -1,59 +1,62 @@
 using Toybox.Ant;
 using Toybox.Application.Properties as Properties;
 
-class EBikeSensor extends Ant.GenericChannel {
+class EBikeSensor {
     private var _fieldIndexes;
     private var _metric;
     private var _deviceNumbers = new [3];
-    private var _deviceIndex = -1;
+    private var _deviceIndex = 0;
+    private var _channel;
 
     public var data;
-    public var searching;
+    public var searching = true;
     public var totalAssistModes;
     public var manufacturerId;
     public var fitBatteryField;
     public var fitAssistModeField;
+    public var lastMessageTime = 0;
 
     function initialize() {
-        GenericChannel.initialize(method(:onMessage), new Ant.ChannelAssignment(Properties.getValue("CT"), 1 /* NETWORK_PLUS */));
-
         // Load paired devices
-        var deviceNumbers = _deviceNumbers;
-        for (var i = 0; i < deviceNumbers.size(); i++) {
-            deviceNumbers[i] = Properties.getValue("DN" + i);
-        }
-
-        // Set the configuration
-        setNextDeviceNumber();
-        searching = true;
+        setupDeviceNumbers();
     }
 
     function setup(size, dataIndexes, metric) {
         data = new [size];
         _fieldIndexes = new [14];
         _metric = metric;
+        setupDeviceNumbers();
         for (var i = 0; i < _fieldIndexes.size(); i++) {
             _fieldIndexes[i] = (((dataIndexes >> (i * 4)) & 0x0F) - 1).toNumber();
         }
     }
 
     function open() {
-        totalAssistModes = null;
-        manufacturerId = null;
-        searching = GenericChannel.open();
-        return searching;
+        if (_channel == null) {
+            _channel = new Ant.GenericChannel(method(:onMessage), new Ant.ChannelAssignment(Properties.getValue("CT"), 1 /* NETWORK_PLUS */));
+            setChannelDeviceNumber();
+        }
+
+        resetMessageData();
+        return _channel.open();
     }
 
     function close() {
-        GenericChannel.release();
+        var channel = _channel;
+        if (channel != null) {
+            _channel = null;
+            channel.release();
+            resetMessageData();
+        }
     }
 
     function onMessage(message) {
+        lastMessageTime = System.getTimer();
         var payload = message.getPayload();
-         if (0x4E /* MSG_ID_BROADCAST_DATA */ == message.messageId) {
-             if (data == null) {
-                 return;
-             }
+        if (0x4E /* MSG_ID_BROADCAST_DATA */ == message.messageId) {
+            if (data == null) {
+                return;
+            }
 
             var index;
             var indexes = _fieldIndexes;
@@ -113,9 +116,11 @@ class EBikeSensor extends Ant.GenericChannel {
         } else if (0x40 /* MSG_ID_CHANNEL_RESPONSE_EVENT */ == message.messageId) {
             if (0x01 /* MSG_ID_RF_EVENT */ == (payload[0] & 0xFF)) {
                 if (0x07 /* MSG_CODE_EVENT_CHANNEL_CLOSED */ == (payload[1] & 0xFF)) {
-                    // Channel closed, re-open
-                    setNextDeviceNumber();
-                    open();
+                    // Channel closed, re-open only when the channel was not manually closed
+                    if (_channel != null) {
+                        setNextDeviceNumber();
+                        open();
+                    }
                 } else if (0x08 /* MSG_CODE_EVENT_RX_FAIL_GO_TO_SEARCH */ == (payload[1] & 0xFF)) {
                     searching = true;
                 }
@@ -127,8 +132,12 @@ class EBikeSensor extends Ant.GenericChannel {
 
     private function setNextDeviceNumber() {
         _deviceIndex = (_deviceIndex + 1) % _deviceNumbers.size();
+        setChannelDeviceNumber();
+    }
+
+    private function setChannelDeviceNumber() {
         var deviceNumber = _deviceNumbers[_deviceIndex];
-        GenericChannel.setDeviceConfig(new Ant.DeviceConfig({
+        _channel.setDeviceConfig(new Ant.DeviceConfig({
             :deviceNumber => deviceNumber,
             :deviceType => 20,        // LEV Device
             :messagePeriod => 8192,   // Channel period
@@ -139,7 +148,7 @@ class EBikeSensor extends Ant.GenericChannel {
 
     private function setNewDeviceNumber() {
         var deviceNumbers = _deviceNumbers;
-        var newDeviceNumber = GenericChannel.getDeviceConfig().deviceNumber;
+        var newDeviceNumber = _channel.getDeviceConfig().deviceNumber;
         // Find the first empty slot to insert the found device.
         for (var i = 0; i < deviceNumbers.size(); i++) {
             if (deviceNumbers[i] == 0) {
@@ -152,6 +161,18 @@ class EBikeSensor extends Ant.GenericChannel {
                 break;
             }
         }
+    }
+
+    private function setupDeviceNumbers() {
+        var deviceNumbers = _deviceNumbers;
+        for (var i = 0; i < deviceNumbers.size(); i++) {
+            deviceNumbers[i] = Properties.getValue("DN" + i);
+        }
+    }
+
+    private function resetMessageData() {
+        totalAssistModes = null;
+        manufacturerId = null;
     }
 
     private function setValue(value, index, defaultValue) {

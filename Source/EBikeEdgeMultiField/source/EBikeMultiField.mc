@@ -17,6 +17,7 @@ class EBikeMultiField extends WatchUi.DataField {
 
     function initialize() {
         DataField.initialize();
+        _sensor = new EBikeSensor();
     }
 
     // Called from EBikeMultiFieldApp.onSettingsChanged()
@@ -26,37 +27,45 @@ class EBikeMultiField extends WatchUi.DataField {
 
     // Called from EBikeMultiFieldApp.onStart()
     function onStart() {
+        var errorCode = null;
         try {
-            _sensor = new EBikeSensor();
             if (!_sensor.open()) {
-                _errorCode = 2;
-                _sensor = null;
-            } else {
-                setupFitRecording(_sensor);
+                errorCode = 2;
             }
         } catch(e instanceof Ant.UnableToAcquireChannelException) {
-            _errorCode = 1;
-            _sensor = null;
+            errorCode = 1;
         }
+
+        _errorCode = errorCode;
     }
 
     // Called from EBikeMultiFieldApp.onStop()
     function onStop() {
-        if (_sensor != null) {
-            _sensor.close();
-            _sensor = null;
-        }
+        _sensor.close();
+        _sensor = null;
     }
 
     // Overrides DataField.onLayout
     function onLayout(dc) {
-        preCalculate(dc, _sensor);
+        _fields = null; // Force to precalculate again
     }
 
     // Overrides DataField.onUpdate
     function onUpdate(dc) {
+        var sensor = _sensor;
+        var lastMessageTime = sensor.lastMessageTime;
+        // In case the device goes to sleep for a longer period of time the channel will be closed by the system
+        // and EBikeSensor.onMessage won't be called anymore. In such case release the current channel and open
+        // a new one. To detect a sleep we check whether the last message was received more than the value of
+        // the option "searchTimeoutLowPriority" ago, which in our case is set to 15 seconds.
+        if (lastMessageTime > 0 && System.getTimer() - lastMessageTime > 20000) {
+            _sensor.close();
+            onStart();
+            onSettingsChanged();
+        }
+
         if (_fields == null) {
-            preCalculate(dc, _sensor);
+            preCalculate(dc, sensor);
         }
 
         var backgroundColor = getBackgroundColor();
@@ -117,8 +126,14 @@ class EBikeMultiField extends WatchUi.DataField {
         }
     }
 
-    private function setupFitRecording(sensor) {
-        if (Properties.getValue("FF0")) {
+    private function preCalculate(dc, sensor) {
+        if (_errorCode == 3) {
+            _errorCode = null;
+        } else if (_errorCode != null) { // Do not precalculate in case the sensor was not initialized
+            return;
+        }
+
+        if (sensor.fitBatteryField == null && Properties.getValue("FF0")) {
             sensor.fitBatteryField = createField(
                 "ebike_battery",
                 0, // Id
@@ -130,7 +145,7 @@ class EBikeMultiField extends WatchUi.DataField {
             );
         }
 
-        if (Properties.getValue("FF1")) {
+        if (sensor.fitAssistModeField == null && Properties.getValue("FF1")) {
             sensor.fitAssistModeField = createField(
                 "ebike_assist_mode",
                 1, // Id
@@ -139,15 +154,6 @@ class EBikeMultiField extends WatchUi.DataField {
                     :mesgType=> 20 /* Fit.MESG_TYPE_RECORD */
                 }
             );
-        }
-    }
-
-    private function preCalculate(dc, sensor) {
-        // Do not precalculate in case the sensor was not initialized
-        if (sensor == null) {
-            return;
-        } else {
-            _errorCode = null;
         }
 
         var layouts = [
@@ -285,7 +291,7 @@ class EBikeMultiField extends WatchUi.DataField {
             var valueY = y + labelFontHeight + ((h - labelFontHeight) / 2) + (valueFontYOffset / 2);
             var unitWidth = null;
             var unitLabels = null;
-            var units = fieldUnits != null ? getFieldUnits(fieldUnits, fieldType, deviceSettings, metric) : null;
+            var units = fieldUnits != null ? getFieldUnits(fieldUnits, fieldType, metric) : null;
             if (units != null) {
                 var unitsSize = units.size();
                 var maxUnitFont = ((0x2001 >> fieldType) & 0x01) == 1 ? 8 : 4;
@@ -385,7 +391,7 @@ class EBikeMultiField extends WatchUi.DataField {
         return ((fontTopPaddings >> (font * 7)) & 0x7F).toNumber();
     }
 
-    private function getFieldUnits(fieldUnits, type, deviceSettings, metric) {
+    private function getFieldUnits(fieldUnits, type, metric) {
         // Every field is represented with 4bits, where the first 3 bits represents the index of fieldUnits array and the fourth bit
         // represents whether the unit is different for mertic and statute. In case it is different the statute counterpart is located
         // one index ahead.

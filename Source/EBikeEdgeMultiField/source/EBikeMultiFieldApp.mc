@@ -25,6 +25,6 @@ class EBikeMultiFieldApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() {
-        return [ _multiField];
+        return [_multiField];
     }
 }
