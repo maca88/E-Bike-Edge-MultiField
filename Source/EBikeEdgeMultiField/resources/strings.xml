@@ -86,6 +86,11 @@
     <string id="Purple">Purple</string>
     <string id="Pink">Pink</string>
 
+    <string id="Units">Units</string>
+    <string id="Default">Default</string>
+    <string id="Metric">Metric</string>
+    <string id="Statute">Statute</string>
+
     <!-- Field titles -->
     <string id="Battery">LEV Battery</string>
     <string id="BatteryChargingCycles">Charge Cycles</string>

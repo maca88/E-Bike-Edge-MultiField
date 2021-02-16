@@ -235,7 +235,8 @@ class EBikeMultiField extends WatchUi.DataField {
         var totalFields = layout / 100;
         var fontTopPaddings = loadJson(:FontTopPaddings)[0];
         var fieldUnits = settings[4] ? loadJson(:FieldUnits) : null;
-        var metric = deviceSettings.distanceUnits == 0;
+        var distanceUnits = Properties.getValue("U");
+        var metric = distanceUnits < 0 ? deviceSettings.distanceUnits == 0 : distanceUnits == 0;
         var defaultValues = metric ? 0x2202160 : 0x2202960;  // Fields default value indexes of _defaultValues, 2 bits per field
         var formatTypes = metric ? 0x1013221004100l : 0x1013221104100l; //0x11E9010 : 0x11E9410;  // Fields value format types, 4 bits per field
         var array;

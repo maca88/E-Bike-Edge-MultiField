@@ -86,6 +86,13 @@
                 <listEntry value="64">@Strings.ReceiveOnly</listEntry>
             </settingConfig>
         </setting>
+        <setting propertyKey="@Properties.U" title="@Strings.Units">
+            <settingConfig type="list">
+                <listEntry value="-1">@Strings.Default</listEntry>
+                <listEntry value="0">@Strings.Metric</listEntry>
+                <listEntry value="1">@Strings.Statute</listEntry>
+            </settingConfig>
+        </setting>
         <setting propertyKey="@Properties.FT0" title="@Strings.Field1Type">
             <settingConfig type="list">
                 <listEntry value="0">@Strings.BatteryField</listEntry>

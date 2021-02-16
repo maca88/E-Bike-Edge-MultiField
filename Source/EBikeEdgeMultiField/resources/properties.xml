@@ -20,5 +20,6 @@
         <property id="DN2" type="number">0</property>
         <property id="SC" type="number">43775</property>
         <property id="CT" type="number">0</property>
+        <property id="U" type="number">-1</property>
     </properties>
 </resources>
