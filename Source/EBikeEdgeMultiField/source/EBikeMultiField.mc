@@ -41,8 +41,10 @@ class EBikeMultiField extends WatchUi.DataField {
 
     // Called from EBikeMultiFieldApp.onStop()
     function onStop() {
-        _sensor.close();
-        _sensor = null;
+        if (_sensor != null) {
+            _sensor.close();
+            _sensor = null;
+        }
     }
 
     // Overrides DataField.onLayout
