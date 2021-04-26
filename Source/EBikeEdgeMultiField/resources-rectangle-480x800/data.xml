@@ -1,0 +1,25 @@
+<resources>
+    <!-- Simulator-->
+    <jsonData id="FontTopPaddings">[434610663959118340]</jsonData>
+
+    <!-- Format [[:colorScreen:, :labelAlignement:, :valueFontHeightOffset:, :valueHorizontalAlignement:, :displayUnits:, :padding:, :topPadding:, :labelFont:]
+        :colorScreen: = true / false
+        :labelAlignement: = 1 (Center) / 2 (Left)
+        :valueFontHeightOffset: = Number
+        :valueHorizontalAlignement: = 1 (Center) / 0 (Right)
+        :displayUnits: = true / false
+        :padding: = Number
+        :topPadding: = Number
+        :labelFont: = 0-8
+    -->
+    <jsonData id="Settings">[true, 1, 10, 1, true, 6, 8, 2]</jsonData>
+
+    <!-- Fields and separators positions for portrait and landscape. Format [[:fieldPosition:, ...], [:separator:, ...], [:requirement:]]
+        :fieldPosition: = [:topLeftX:, :topLeftY:, :width:, :height:]
+        :separator: = [:x1:, :y1:, :x2:, :y2:]
+        :requirement: = [:orientation:, :minXRatio:, :minYRatio:]
+     -->
+    <jsonData id="FL100">[[0,0,1,1], null, [0,0,0.1375]]</jsonData>
+    <jsonData id="FL304">[[0,0,1,0.5, 0,0.5,0.5,0.5, 0.5,0.5,0.5,0.5], [0,0.5,1,0.5, 0.5,0.5,0.5,1], [0,1,0.275]]</jsonData>
+    <jsonData id="FL406">[[0,0,0.5,0.5, 0.5,0,0.5,0.5, 0,0.5,0.5,0.5, 0.5,0.5,0.5,0.5], [0,0.50,1,0.50, 0.5,0,0.5,1], [0,1,0.275]]</jsonData>
+</resources>

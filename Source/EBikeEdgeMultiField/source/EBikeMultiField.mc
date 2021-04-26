@@ -1,6 +1,13 @@
 using Toybox.WatchUi;
 using Toybox.Application.Properties as Properties;
 
+(:gpsMap)
+const testString = "88.88";
+
+(:noGpsMap)
+const testString = "188.88";
+
+
 class EBikeMultiField extends WatchUi.DataField {
     private var _errorCode; // The current error code of the datafield
     private var _fields; // Precalcuated fields labels, values and units to draw
@@ -369,13 +376,12 @@ class EBikeMultiField extends WatchUi.DataField {
 
     private function selectFont(dc, width, height, startFont) {
         var i;
-        var str = "188.88";
         var textWidth;
         var textHeight;
         // Search through fonts from biggest to smallest
         for (i = startFont; i > 0; i--) {
             textHeight = dc.getFontHeight(i);
-            textWidth = width != null ? dc.getTextWidthInPixels(str, i) : null;
+            textWidth = width != null ? dc.getTextWidthInPixels($.testString, i) : null;
             if ((textWidth == null || textWidth <= width) && textHeight <= height) {
                 // If this font fits, it is the biggest one that does
                 break;

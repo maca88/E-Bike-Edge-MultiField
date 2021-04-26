@@ -13,6 +13,11 @@
             <iq:product id="edge_1000"/>
             <iq:product id="edge_520"/>
             <iq:product id="edgeexplore"/>
+            <iq:product id="gpsmap66"/>
+            <iq:product id="gpsmap86"/>
+            <iq:product id="montana7xx"/>
+            <iq:product id="oregon7xx"/>
+            <iq:product id="rino7xx"/>
         </iq:products>
         <iq:permissions>
             <iq:uses-permission id="Ant"/>

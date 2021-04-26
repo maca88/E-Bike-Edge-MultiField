@@ -1,1 +1,7 @@
 project.manifest = manifest.xml
+
+# maps default
+base.excludeAnnotations = gpsMap
+
+gpsmap66.excludeAnnotations = noGpsMap
+gpsmap86.excludeAnnotations = noGpsMap
