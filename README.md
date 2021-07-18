@@ -11,6 +11,7 @@ E-Bike Edge MultiField is a [data field](https://developer.garmin.com/connect-iq
 - 14 different field types retrieved from ANT+ LEV device
 - Displaying Giant assist modes (OFF, ECO, BASIC, ACTIVE, AUTO, SPORT, POWER)
 - Displaying Specialized assist modes (OFF, ECO, TRAIL, TURBO)
+- Displaying Mahle assist modes (OFF, ECO, TRAIL, TURBO)
 
 ## How to use
 
