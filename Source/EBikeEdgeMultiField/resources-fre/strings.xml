@@ -1,0 +1,109 @@
+<strings>
+    <string id="AppName">E-Bike MultiField</string>
+
+    <string id="FieldsLayout1Type">Disposition plein écran</string>
+    <string id="FieldsLayout2Type">Disposition demi-écran</string>
+    <string id="FieldsLayout3Type">Disposition quart-écran</string>
+
+    <string id="Field1Type">Champ 1</string>
+    <string id="Field2Type">Champ 2</string>
+    <string id="Field3Type">Champ 3</string>
+    <string id="Field4Type">Champ 4</string>
+    <string id="Field5Type">Champ 5</string>
+    <string id="Field6Type">Champ 6</string>
+    <string id="Field7Type">Champ 7</string>
+    <string id="Field8Type">Champ 8</string>
+    <string id="Field9Type">Champ 9</string>
+    <string id="Field10Type">Champ 10</string>
+
+    <string id="SeparatorsColor">Couleur de séparation des champs</string>
+
+    <string id="ANTChannelType">Communication ANT+</string>
+    <string id="BidirectionalReceive">Réception bidirectionnelle</string>
+    <string id="ReceiveOnly">Réception uniquement</string>
+
+    <string id="FieldOne">1 champ</string>
+    <string id="FieldTwoA">2 champs A</string>
+    <string id="FieldTwoB">2 champs B</string>
+    <string id="FieldThreeA">3 champs A (Portrait)</string>
+    <string id="FieldThreeB">3 champs B</string>
+    <string id="FieldFourA">4 champs A (Portrait)</string>
+    <string id="FieldFourB">4 champs B</string>
+    <string id="FieldFiveA">5 champs A (Portrait)</string>
+    <string id="FieldFiveB">5 champs B (Paysage)</string>
+    <string id="FieldSixA">6 champs A (Portrait)</string>
+    <string id="FieldSixB">6 champs B (Paysage)</string>
+    <string id="FieldSevenA">7 champs A (Portrait)</string>
+    <string id="FieldSevenB">7 champs B (Paysage)</string>
+    <string id="FieldEightA">8 champs A (Portrait)</string>
+    <string id="FieldEightB">8 champs B (Paysage)</string>
+    <string id="FieldNineA">9 champs A (Portrait)</string>
+    <string id="FieldNineB">9 champs B (Paysage)</string>
+    <string id="FieldTen">10 champs (Portrait)</string>
+
+    <string id="RecordBattery">Enregistrer le niveau de batterie</string>
+    <string id="RecordAssistMode">Enregistrer le mode d'assistance</string>
+
+    <string id="DeviceNumber1">Identifiant du VAE principal</string>
+    <string id="DeviceNumber2">Identifiant du deuxième VAE</string>
+    <string id="DeviceNumber3">Identifiant du troisième VAE</string>
+
+    <string id="BatteryField">Niveau de batterie</string>
+    <string id="BatteryChargingCyclesField">Nombre de cycles de charge</string>
+    <string id="BatteryVoltageField">Tension de la batterie</string>
+    <string id="LightsField">Feux</string>
+    <string id="OdometerField">Odomètre</string>
+    <string id="RemainingRangeField">Autonomie restante</string>
+    <string id="FuelConsumptionField">Consommation</string>
+    <string id="TemperatureMotorField">Température moteur</string>
+    <string id="TemperatureBatteryField">Température batterie</string>
+    <string id="AssistModeField">Mode d'assistance</string>
+    <string id="SpeedField">Vitesse VAE</string>
+    <string id="ErrorCodeField">Code erreur VAE</string>
+    <string id="CurrentChargeDistanceField">Distance sur la charge courante</string>
+    <string id="AssistField">Pourcentage d'assistance</string>
+
+    <string id="ColdTemperature">Très basse</string>
+    <string id="ColdWarmTemperature">Basse</string>
+    <string id="WarmTemperature">Chaude</string>
+    <string id="WarmHotTemperature">Elevée</string>
+    <string id="HotTemperature">Très élevée</string>
+
+    <string id="On">ON</string>
+    <string id="Off">OFF</string>
+
+    <string id="Procent">%</string>
+    <string id="Mode">Mode</string>
+
+    <string id="Red">Rouge</string>
+    <string id="DarkRed">Rouge Foncé</string>
+    <string id="Orange">Orange</string>
+    <string id="Yellow">Jaune</string>
+    <string id="Green">Vert</string>
+    <string id="DarkGreen">Vert Foncé</string>
+    <string id="Blue">Bleu</string>
+    <string id="DarkBlue">Bleu Foncé</string>
+    <string id="Purple">Violet</string>
+    <string id="Pink">Rose</string>
+
+    <string id="Units">Unités</string>
+    <string id="Default">Par défaut</string>
+    <string id="Metric">Métrique</string>
+    <string id="Statute">Terrestre</string>
+
+    <!-- Field titles -->
+    <string id="Battery">Batt. VAE</string>
+    <string id="BatteryChargingCycles">Cycles Ch.</string>
+    <string id="BatteryVoltage">Tension</string>
+    <string id="Lights">Feux VAE</string>
+    <string id="Odometer">Odo. VAE</string>
+    <string id="RemainingRange">Autonomie</string>
+    <string id="FuelConsumption">Conso.</string>
+    <string id="TemperatureMotor">T° Moteur</string>
+    <string id="TemperatureBattery">T° Batt.</string>
+    <string id="AssistMode">Mode VAE</string>
+    <string id="Speed">Vitesse VAE</string>
+    <string id="ErrorCode">Code Erreur</string>
+    <string id="CurrentChargeDistance">Estim. Dist.</string>
+    <string id="Assist">Assistance</string>
+</strings>
