@@ -32,6 +32,13 @@ E-Bike Edge MultiField is a [data field](https://developer.garmin.com/connect-iq
 
 For unpair a LEV device set the `Primary LEV Device Number` setting to zero by using Garmin Express or Garmin Connect Mobile.
 
+## Pair multiple E-Bikes
+
+By default only one E-Bike will be paired in order to prevent pairing E-Bikes from other people when our is off. To pair an additional E-Bike:
+1. Update `Secondary LEV Device Number` app settings value from `-1` to `0`
+2. Make sure that the E-Bike that was already paired is either off or far away from Garmin Edge
+3. Follow the [pairing steps](#pairing) to pair the second E-Bike.
+
 ## Currently tested ANT+ LEV devices:
 - Giant RideControl Ergo (setting `ANT channel type` must be set to `Receive Only (Slave)`)
 

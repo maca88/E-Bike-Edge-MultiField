@@ -16,8 +16,8 @@
         <property id="FF0" type="boolean">true</property>
         <property id="FF1" type="boolean">true</property>
         <property id="DN0" type="number">0</property>
-        <property id="DN1" type="number">0</property>
-        <property id="DN2" type="number">0</property>
+        <property id="DN1" type="number">-1</property>
+        <property id="DN2" type="number">-1</property>
         <property id="SC" type="number">43775</property>
         <property id="CT" type="number">0</property>
         <property id="U" type="number">-1</property>

@@ -131,7 +131,10 @@ class EBikeSensor {
     }
 
     private function setNextDeviceNumber() {
-        _deviceIndex = (_deviceIndex + 1) % _deviceNumbers.size();
+        var startDeviceIndex = _deviceIndex;
+        do {
+          _deviceIndex = (_deviceIndex + 1) % _deviceNumbers.size();
+        } while (_deviceNumbers[_deviceIndex] < 0 && startDeviceIndex != _deviceIndex);
         setChannelDeviceNumber();
     }
 
