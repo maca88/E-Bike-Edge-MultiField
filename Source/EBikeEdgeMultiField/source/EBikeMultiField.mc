@@ -1,4 +1,6 @@
 using Toybox.WatchUi;
+using Toybox.Ant;
+using Toybox.Lang;
 using Toybox.Application.Properties as Properties;
 
 (:gpsMap)
