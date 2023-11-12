@@ -1,0 +1,6 @@
+<resources>
+    <properties>
+        <!-- Top paddings -->
+        <property id="TP" type="string"></property>
+    </properties>
+</resources>
