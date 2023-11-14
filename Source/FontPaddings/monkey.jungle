@@ -1,6 +1,6 @@
 project.manifest = manifest.xml
-# excludeBase=device
 excludeBase=simulator;readOnly
+#excludeBase=device;write
 
 project.optimization = 2
 project.typecheck = 0

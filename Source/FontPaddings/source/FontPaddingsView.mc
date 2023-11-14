@@ -218,6 +218,7 @@ class FontPaddingsView extends WatchUi.View {
 
     (:write)
     private function setupPaddings() {
+        System.println("Loading stored font paddings");
         var value = Properties.getValue("TP");
         var paddings;
         if (value != null && value.length() > 0) {
@@ -231,15 +232,18 @@ class FontPaddingsView extends WatchUi.View {
         }
 
         _paddings = paddings;
+        System.println("Language=" + _language + " Top paddings=" + paddings + " Top paddings value=" + getPaddingsValue(paddings));
     }
 
     (:device)
     private function getPaddings() {
+        System.println("Loading device font paddings");
         return WatchUi.loadResource(Rez.JsonData.DeviceFontPaddings);
     }
 
     (:simulator)
     private function getPaddings() {
+        System.println("Loading simulator font paddings");
         return WatchUi.loadResource(Rez.JsonData.SimulatorFontPaddings);
     }
 
