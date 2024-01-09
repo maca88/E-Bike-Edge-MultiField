@@ -62,6 +62,7 @@
     <string id="ErrorCodeField">Code erreur VAE</string>
     <string id="CurrentChargeDistanceField">Distance sur la charge courante</string>
     <string id="AssistField">Pourcentage d'assistance</string>
+    <string id="ManufacturerIdField">Identifiant du fabricant</string>
 
     <string id="ColdTemperature">Très basse</string>
     <string id="ColdWarmTemperature">Basse</string>
@@ -106,4 +107,5 @@
     <string id="ErrorCode">Code Erreur</string>
     <string id="CurrentChargeDistance">Estim. Dist.</string>
     <string id="Assist">Assistance</string>
+    <string id="ManufacturerId">Fabric Id</string>
 </strings>

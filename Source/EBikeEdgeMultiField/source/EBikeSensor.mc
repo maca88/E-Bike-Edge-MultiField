@@ -23,7 +23,7 @@ class EBikeSensor {
 
     function setup(size, dataIndexes, metric) {
         data = new [size];
-        _fieldIndexes = new [14];
+        _fieldIndexes = new [15];
         _metric = metric;
         setupDeviceNumbers();
         for (var i = 0; i < _fieldIndexes.size(); i++) {
@@ -111,6 +111,8 @@ class EBikeSensor {
             } else if (pageNumber == 80) {
                 if (manufacturerId == null) {
                     manufacturerId = (payload[5] << 8) | payload[4]; // Manufacturer ID
+                    index = indexes[14];
+                    if (index != -1) { setValue(manufacturerId, index, 0); }
                 }
             }
         } else if (0x40 /* MSG_ID_CHANNEL_RESPONSE_EVENT */ == message.messageId) {

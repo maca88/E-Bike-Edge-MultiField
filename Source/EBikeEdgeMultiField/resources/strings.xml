@@ -62,6 +62,7 @@
     <string id="ErrorCodeField">LEV Error Code</string>
     <string id="CurrentChargeDistanceField">Distance on Current Charge</string>
     <string id="AssistField">% Assist</string>
+    <string id="ManufacturerIdField">Manufacturer Id</string>
 
     <string id="ColdTemperature">Cold</string>
     <string id="ColdWarmTemperature">Warm-</string>
@@ -106,4 +107,5 @@
     <string id="ErrorCode">LEV Error Code</string>
     <string id="CurrentChargeDistance">Charge Dist.</string>
     <string id="Assist">Assist</string>
+    <string id="ManufacturerId">Manuf Id</string>
 </strings>

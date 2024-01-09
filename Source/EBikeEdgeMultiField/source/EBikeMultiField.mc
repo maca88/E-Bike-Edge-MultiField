@@ -201,7 +201,8 @@ class EBikeMultiField extends WatchUi.DataField {
             :Speed,
             :ErrorCode,
             :CurrentChargeDistance,
-            :Assist
+            :Assist,
+            :ManufacturerId
         ];
         var i;
         var width = dc.getWidth();
