@@ -45,5 +45,6 @@
     <jsonData id="SpecializedAssistModes">["OFF", "ECO", "ECO", "TRAIL", "TRAIL", "TURBO", "TURBO", "TURBO"]</jsonData>
     <!-- Modes: 0/3 -> OFF, 2/3 -> ECO, 4/3 -> TRAIL, 7/3 -> TURBO  -->
     <jsonData id="MahleAssistModes">["OFF", "ECO", "ECO", "TRAIL", "TRAIL", "TURBO", "TURBO", "TURBO"]</jsonData>
-    <jsonData id="YamahaAssistModes">["OFF", "ECO+", "ECO", "STD", "HIGH", "EXPW", "EXPW", "AUTO"]</jsonData>
+    <!-- Modes: 0/5 -> OFF, 1/5 -> ECO+, 2/5 -> ECO, 3/5 -> STD, HIGH -> 5/5, 7/5 -> EXPW  -->
+    <jsonData id="YamahaAssistModes">["OFF", "ECO+", "ECO", "STD", "HIGH", "HIGH", "EXPW", "EXPW"]</jsonData>
 </resources>

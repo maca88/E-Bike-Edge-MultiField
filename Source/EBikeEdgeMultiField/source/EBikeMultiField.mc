@@ -450,7 +450,7 @@ class EBikeMultiField extends WatchUi.DataField {
         _assistModes = newManufacturerId == 108 /* Giant */ ? loadJson(:GiantAssistModes)
                 : newManufacturerId == 63 /* Specialized */ ? loadJson(:SpecializedAssistModes)
                 : newManufacturerId == 299 /* Mahle */ ? loadJson(:MahleAssistModes)
-                //: newManufacturerId == 304 /* Yamaha */ ? loadJson(:YamahaAssistModes)
+                : newManufacturerId == 304 /* Yamaha */ ? loadJson(:YamahaAssistModes)
                 : null;
 
         return _assistModes;
