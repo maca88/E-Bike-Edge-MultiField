@@ -65,9 +65,9 @@
     <string id="ManufacturerIdField">Manufacturer Id</string>
 
     <string id="ColdTemperature">Cold</string>
-    <string id="ColdWarmTemperature">Warm-</string>
-    <string id="WarmTemperature">Warm</string>
-    <string id="WarmHotTemperature">Warm+</string>
+    <string id="ColdWarmTemperature">Cool</string>
+    <string id="WarmTemperature">Normal</string>
+    <string id="WarmHotTemperature">Warm</string>
     <string id="HotTemperature">Hot</string>
 
     <string id="On">ON</string>
