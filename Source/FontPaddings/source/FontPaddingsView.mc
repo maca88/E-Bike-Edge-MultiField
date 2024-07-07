@@ -19,6 +19,7 @@ class FontPaddingsView extends WatchUi.View {
     private var _monochrome;
     private var _language;
     private var _fontPaging;
+    private var _height;
 
     public var currentView = 0;
     public var currentFont = 0;
@@ -44,7 +45,18 @@ class FontPaddingsView extends WatchUi.View {
     }
 
     function onTap(location) {
-         return false;
+        var key = location[1] > (_height / 2) ? WatchUi.KEY_DOWN : WatchUi.KEY_UP;
+        if (currentView == 2) {
+            if (key == WatchUi.KEY_DOWN) {
+                _paddings[currentFont]++;
+                return true;
+            } else if (key == WatchUi.KEY_UP && _paddings[currentFont] > 0) {
+                _paddings[currentFont]--;
+                return true;
+            }
+        }
+
+        return false;
     }
 
     function onKey(key) {
@@ -196,6 +208,7 @@ class FontPaddingsView extends WatchUi.View {
         }
 
         _fontPaging = paging;
+        _height = height;
     }
 
     (:readOnly)
