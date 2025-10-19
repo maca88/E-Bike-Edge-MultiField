@@ -187,12 +187,21 @@ class FontPaddingsView extends WatchUi.View {
         var x = width / 2;
         var y = fontPadding;
 
+        for (var font = 0; font < 18; font++) {
+            var text = font.toString() + (font > 4 ? _numberText : _stringText);
+            var dim = dc.getTextDimensions(text, font);
+            var fontHeight = dim[1];
+            System.println("Font=" + font + " height=" + fontHeight + " descent=" + dc.getFontDescent(font));
+        }
+
+
         var paging = [];
         var currentPage = [];
         for (var font = 0; font < 9; font++) {
             var text = font.toString() + (font > 4 ? _numberText : _stringText);
             var dim = dc.getTextDimensions(text, font);
             var fontHeight = dim[1];
+            System.println("Font=" + font + " height=" + fontHeight + " descent=" + dc.getFontDescent(font));
             if ((y + fontHeight) >= height) {
                 paging.add(currentPage);
                 currentPage = [];

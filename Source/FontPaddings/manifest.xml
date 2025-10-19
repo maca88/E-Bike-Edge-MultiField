@@ -22,13 +22,16 @@
       <iq:product id="edge520plus"/>
       <iq:product id="edge530"/>
       <iq:product id="edge540"/>
+      <iq:product id="edge550"/>
       <iq:product id="edge820"/>
       <iq:product id="edge830"/>
       <iq:product id="edge840"/>
+      <iq:product id="edge850"/>
       <iq:product id="edge_1000"/>
       <iq:product id="edge_520"/>
       <iq:product id="edgeexplore"/>
       <iq:product id="edgeexplore2"/>
+      <iq:product id="edgemtb"/>
       <iq:product id="epix"/>
       <iq:product id="fenix3"/>
       <iq:product id="fenix3_hr"/>
@@ -48,6 +51,7 @@
       <iq:product id="fr235"/>
       <iq:product id="fr245"/>
       <iq:product id="fr245m"/>
+      <iq:product id="fr255"/>
       <iq:product id="fr630"/>
       <iq:product id="fr645"/>
       <iq:product id="fr645m"/>
